@@ -1,0 +1,143 @@
+{
+  "train_winters": "2010/11 to 2018/19",
+  "test_winters": "2022/23 to 2025/26",
+  "stations": [
+    "SAE",
+    "PIL",
+    "GUE",
+    "WFJ",
+    "TIT",
+    "CMA",
+    "ATT",
+    "NAS"
+  ],
+  "fixture_valid_gust_hours": 549955,
+  "by_threshold": {
+    "60": {
+      "climatology": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.0,
+        "mean_bss_pers": -0.641,
+        "mean_ece": 0.028,
+        "pod": 0.705,
+        "episode_hit_rate": 0.608,
+        "mean_lead_h": 6.0,
+        "test_events": 124740
+      },
+      "gboost": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.454,
+        "mean_bss_pers": 0.14,
+        "mean_ece": 0.007,
+        "pod": 0.751,
+        "episode_hit_rate": 0.272,
+        "mean_lead_h": 3.585,
+        "test_events": 124740
+      },
+      "logreg": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.454,
+        "mean_bss_pers": 0.139,
+        "mean_ece": 0.007,
+        "pod": 0.747,
+        "episode_hit_rate": 0.227,
+        "mean_lead_h": 3.283,
+        "test_events": 124740
+      },
+      "persistence": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.37,
+        "mean_bss_pers": 0.0,
+        "mean_ece": 0.01,
+        "pod": 0.716,
+        "episode_hit_rate": 0.0,
+        "mean_lead_h": null,
+        "test_events": 124740
+      }
+    },
+    "70": {
+      "climatology": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.0,
+        "mean_bss_pers": -0.553,
+        "mean_ece": 0.021,
+        "pod": 0.685,
+        "episode_hit_rate": 0.581,
+        "mean_lead_h": 6.0,
+        "test_events": 79121
+      },
+      "gboost": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.413,
+        "mean_bss_pers": 0.128,
+        "mean_ece": 0.006,
+        "pod": 0.71,
+        "episode_hit_rate": 0.261,
+        "mean_lead_h": 3.486,
+        "test_events": 79121
+      },
+      "logreg": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.415,
+        "mean_bss_pers": 0.13,
+        "mean_ece": 0.005,
+        "pod": 0.716,
+        "episode_hit_rate": 0.251,
+        "mean_lead_h": 3.592,
+        "test_events": 79121
+      },
+      "persistence": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.332,
+        "mean_bss_pers": 0.0,
+        "mean_ece": 0.008,
+        "pod": 0.677,
+        "episode_hit_rate": 0.0,
+        "mean_lead_h": null,
+        "test_events": 79121
+      }
+    },
+    "80": {
+      "climatology": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.0,
+        "mean_bss_pers": -0.418,
+        "mean_ece": 0.015,
+        "pod": 0.673,
+        "episode_hit_rate": 0.571,
+        "mean_lead_h": 6.0,
+        "test_events": 47622
+      },
+      "gboost": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.352,
+        "mean_bss_pers": 0.115,
+        "mean_ece": 0.005,
+        "pod": 0.667,
+        "episode_hit_rate": 0.327,
+        "mean_lead_h": 3.173,
+        "test_events": 47622
+      },
+      "logreg": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.359,
+        "mean_bss_pers": 0.124,
+        "mean_ece": 0.004,
+        "pod": 0.65,
+        "episode_hit_rate": 0.254,
+        "mean_lead_h": 2.941,
+        "test_events": 47622
+      },
+      "persistence": {
+        "stations_scored": 8,
+        "mean_bss_clim": 0.273,
+        "mean_bss_pers": 0.0,
+        "mean_ece": 0.006,
+        "pod": 0.622,
+        "episode_hit_rate": 0.0,
+        "mean_lead_h": null,
+        "test_events": 47622
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "station": "Säntis",
+  "issue_utc": "2023-12-19T13:00:00Z",
+  "threshold_kmh": 70,
+  "model": "logreg",
+  "p_star": 0.35,
+  "level": "hold",
+  "lead_hold_h": 1,
+  "p_exceed": {
+    "1": 0.503,
+    "2": 0.5682,
+    "3": 0.5805,
+    "4": 0.5854,
+    "5": 0.5854,
+    "6": 0.5805
+  },
+  "operator": "Säntis: wind hold likely from +1 h (14:00 UTC). P(gust > 70 km/h) = 59% at +4 h.",
+  "guest": {
+    "en": "Strong wind is expected from about 14:00. The lift will probably stop. Please plan your return trip.",
+    "de": "Ab etwa 14:00 wird starker Wind erwartet. Die Bahn wird voraussichtlich stehen bleiben. Bitte planen Sie die Rückfahrt.",
+    "fr": "Un vent fort est attendu vers 14:00. L'installation sera probablement arrêtée. Veuillez prévoir votre retour.",
+    "it": "Verso le 14:00 è previsto vento forte. L'impianto probabilmente si fermerà. Pianificate il rientro."
+  }
+}

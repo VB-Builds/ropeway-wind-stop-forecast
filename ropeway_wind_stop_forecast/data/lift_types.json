@@ -1,0 +1,7 @@
+{
+  "_note": "Illustrative defaults aligned with the 60/70/80 km/h evaluation grid. They are NOT a regulation and NOT from any operating licence. Real limits come from each installation's manual and operating rules; edit this file or pass --threshold.",
+  "surface_lift": {"label": "surface lift (T-bar / platter)", "threshold_kmh": 60},
+  "chairlift": {"label": "chairlift", "threshold_kmh": 70},
+  "gondola": {"label": "gondola / cabin lift", "threshold_kmh": 80},
+  "aerial_tramway": {"label": "aerial tramway / cable car", "threshold_kmh": 80}
+}

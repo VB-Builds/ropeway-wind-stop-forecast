@@ -1,0 +1,13 @@
+{
+  "claim": "Open-source 1-6 h forecast of the chance that gusts pass a lift's wind-hold limit.",
+  "data_label": "open data: MeteoSwiss SwissMetNet, 8 mountain stations, winters 2010/11-2025/26",
+  "stats": [
+    ["0.41", "Brier skill vs climatology", "accent"],
+    ["+0.13", "extra skill over persistence", "green"],
+    ["25%", "storm onsets warned >=1 h ahead", "amber"]
+  ],
+  "limit": "Not verified at lift towers or against real wind-hold logs; station gusts stand in for lift limits.",
+  "alt": "Dark chart with two panels. Top: a held-out storm at Saentis, observed gusts rising past a 70 km/h line while a blue forecast probability made 3 hours earlier climbs ahead of them. Bottom: Brier skill against climatology by lead time, with the learned models above persistence at every lead from 1 to 6 hours.",
+  "hashtags": ["#IoT", "#Ropeways", "#Forecasting", "#OpenData", "#MachineLearning", "#Switzerland"],
+  "post": "A cable car that stops for wind does not announce it. Guests find out at the top station, and the operator finds out when the anemometer crosses the limit.\n\nI built an open-source forecaster for exactly that decision: the probability that the hourly maximum gust exceeds a chosen limit (60, 70 or 80 km/h) in each of the next 1 to 6 hours. It turns the probabilities into an operator message, guest text in German, French, Italian and English, and a JSON/MQTT feed.\n\nI tested it on open MeteoSwiss data from 8 mountain stations, trained on winters 2010/11 to 2018/19 and scored only on the held-out winters 2022/23 to 2025/26.\n\nAt 70 km/h, averaged over the stations:\n- Brier skill versus climatology: 0.41, with well-calibrated probabilities (mean calibration error 0.005).\n- Versus persistence (\"it is windy now, so it stays windy\"): +0.13 skill.\n- Storm onsets after at least 6 calm hours: 25% were warned at least 1 hour ahead, 0% for persistence. At the same operating point about a third of the warnings were false alarms.\n\nWhat is not verified: these are weather-station gusts, not measurements at lift towers, and the thresholds are illustrative, not anyone's licence conditions. There is no comparison with real wind-hold logs.\n\nIf you run or plan lifts: would a calibrated 3-hour-ahead probability change how you brief guests and staff?\n\nCode: https://github.com/Usernamepersonperson/ropeway-wind-stop-forecast"
+}

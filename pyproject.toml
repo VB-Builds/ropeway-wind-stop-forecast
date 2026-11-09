@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ropeway-wind-stop-forecast"
+version = "0.1.0"
+description = "Open-source wind-hold forecast for cable cars, gondolas and chairlifts: calibrated probability that gusts exceed a lift threshold in the next 1-6 h, operator and guest messages, MQTT/JSON feed."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "pandas>=2.1", "scikit-learn>=1.4", "matplotlib>=3.8", "tzdata"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+mqtt = ["paho-mqtt>=2.0"]
+
+[project.scripts]
+ropeway-wind = "ropeway_wind_stop_forecast.cli:main"
+
+[tool.setuptools]
+packages = ["ropeway_wind_stop_forecast"]
+
+[tool.setuptools.package-data]
+ropeway_wind_stop_forecast = ["data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:asyncio"
+
+[tool.ruff]
+line-length = 170
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
