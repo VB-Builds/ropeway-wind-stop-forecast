@@ -88,4 +88,4 @@ Live context only (parsers included, not used for training): SLF IMIS measuremen
 
 ## Licence
 
-MIT, Copyright (c) 2026 Victor Bonilla.
+MIT, Copyright (c) 2026 VB-Builds.
